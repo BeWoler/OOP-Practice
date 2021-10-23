@@ -48,3 +48,14 @@ class Employee extends Person {
 }
 
 const employee1 = new Employee('Stanislav', 'Vorozhun', 'dont remember', 15, 20, 30);
+
+class Developer extends Employee {
+    private _level;
+
+    constructor(firstName, lastName, age, inn, number, snils, level) {
+        super(firstName, lastName, age, inn, number, snils)
+        this._level = level;
+    }
+}
+
+const me = new Developer('Misha', 'Bireta', 21, 'dont know', 'dont know', 'dont know', 'Junior'); 
