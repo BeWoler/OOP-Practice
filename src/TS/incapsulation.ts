@@ -1,17 +1,17 @@
-class Rectangle {
-    _width;
-    _height;
+class Rectangle2 {
+    private _width;
+    private _height;
 
     constructor(w, h) {
         this._width = w;
         this._height = h;
     }
 
-    get width() {
+    public get width() {
         return this._width
     }
 
-    set width(value) {
+    public set width(value) {
         value <= 0 ? this._width = 1 : this._width = value
     }
 
@@ -24,6 +24,6 @@ class Rectangle {
     }   
 }
 
-const rect = new Rectangle(5, 10);
-rect.width = -2;
-console.log(rect) // width = 1
+const rect2 = new Rectangle2(5, 10);
+rect2.width = -2;
+console.log(rect2) // width = 1
